@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: lf-model-server
+    env: docker
+    plan: standard
+    dockerfilePath: ./model-server/Dockerfile
+    envVars:
+      - key: PORT
+        value: '8080'
+      - key: PYTHONUNBUFFERED
+        value: '1'
+      - key: APPWRITE_ENDPOINT
+        value: '<<<APPWRITE_ENDPOINT>>>'
+      - key: APPWRITE_API_KEY
+        value: '<<<APPWRITE_API_KEY>>>'
+      - key: APPWRITE_PROJECT
+        value: '<<<APPWRITE_PROJECT>>>'

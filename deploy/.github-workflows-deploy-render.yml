@@ -1,0 +1,12 @@
+name: Deploy to Render
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  render-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to Render via GitHub integration
+        run: echo "Render will build from main (ensure Render linked to this repo)"

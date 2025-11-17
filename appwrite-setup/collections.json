@@ -1,0 +1,38 @@
+{
+  "collections": [
+    {
+      "name": "items",
+      "read": ["role:all"],
+      "write": ["role:all"],
+      "attributes": [
+        {"key": "type", "type": "string"},
+        {"key": "title", "type": "string"},
+        {"key": "description", "type": "string"},
+        {"key": "imageFileId", "type": "string"},
+        {"key": "location", "type": "string"},
+        {"key": "collegeId", "type": "string"},
+        {"key": "userId", "type": "string"},
+        {"key": "status", "type": "string"},
+        {"key": "createdAt", "type": "datetime"},
+        {"key": "embedding", "type": "json"},
+        {"key": "caption", "type": "string"},
+        {"key": "matchedWith", "type": "json"},
+        {"key": "otpHash", "type": "string"},
+        {"key": "otpExpiresAt", "type": "datetime"}
+      ]
+    },
+    {
+      "name": "users",
+      "read": ["role:all"],
+      "write": ["role:all"],
+      "attributes": [
+        {"key": "userId", "type": "string"},
+        {"key": "name", "type": "string"},
+        {"key": "email", "type": "string"},
+        {"key": "phone", "type": "string"},
+        {"key": "collegeId", "type": "string"},
+        {"key": "deviceToken", "type": "string"}
+      ]
+    }
+  ]
+}
